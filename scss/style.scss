@@ -1,0 +1,37 @@
+
+@import"variables";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    box-sizing: border-box;
+    font-size: $font_default;
+    background-color: $bg_color;
+}
+
+.hero{
+    display: flex;
+    padding: 112px;
+    background-color: white;
+    align-items: center;
+    margin: 32px auto;
+    max-width: 1328px;
+    border-radius: 1rem;
+    &_content{
+        display: flex;
+        flex-direction: column;
+        h1{
+            color: $font_d1;
+        }
+        p{
+            color: $font_d2;
+        }
+    }
+}
+
+.bt_primary{
+    background-color: $primary_color;
+}

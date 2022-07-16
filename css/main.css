@@ -1,0 +1,27 @@
+* {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  box-sizing: border-box;
+  font-size: 1rem;
+  background-color: #E8F2FC; }
+
+.hero {
+  display: flex;
+  padding: 112px;
+  background-color: white;
+  align-items: center;
+  margin: 32px auto;
+  max-width: 1328px;
+  border-radius: 1rem; }
+  .hero_content {
+    display: flex;
+    flex-direction: column; }
+    .hero_content h1 {
+      color: rgba(0, 0, 0, 0.924); }
+    .hero_content p {
+      color: rgba(0, 0, 0, 0.778); }
+
+.bt_primary {
+  background-color: linear-gradient(270deg, #E64343 0%, #9A45C1 100%); }
