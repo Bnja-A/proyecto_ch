@@ -1,18 +1,12 @@
-
 @import"variables";
 
-*{
-    padding: 0px;
-    margin: 0px;
-}
-
-body{
+body {
     box-sizing: border-box;
     font-size: $font_default;
     background-color: $bg_color;
 }
 
-.hero{
+.hero {
     display: flex;
     padding: 112px;
     background-color: white;
@@ -20,18 +14,162 @@ body{
     margin: 32px auto;
     max-width: 1328px;
     border-radius: 1rem;
-    &_content{
+    gap: 16px;
+
+    &_content {
         display: flex;
         flex-direction: column;
-        h1{
-            color: $font_d1;
-        }
-        p{
-            color: $font_d2;
+        gap: 16px;
+        align-items: flex-start;
+    }
+}
+
+p {
+    color: $font_d3;
+    font-size: 1rem;
+    margin: 0px;
+}
+
+h1 {
+    color: $font_d1;
+    font-weight: bold;
+}
+
+h2 {
+    color: $font_d2;
+    font-weight: bold;
+    margin: 0px;
+}
+
+h3 {
+    color: $font_d2;
+    font-weight: bold;
+    margin: 0px;
+}
+
+h5 {
+    color: $font_d1;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.bt_primary {
+    background: $primary_color;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    color: $font_l1;
+    border: 0px;
+
+    &:hover {
+        background: $primary_color_hover;
+        box-shadow: 0px 2px 20px 0px rgba(5, 44, 82, 0.15);
+        transition: ease-in;
+    }
+
+}
+
+/*Sec1*/
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 224px 0px 224px 0px;
+
+    &_content {
+        max-width: 800px;
+    }
+
+    &_Ctarjeta {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        .tarjeta {
+
+            img {
+                height: 112px;
+                width: 112px;
+            }
+
+            p {
+                font-size: 14px;
+                margin: 0px;
+            }
         }
     }
 }
 
-.bt_primary{
-    background-color: $primary_color;
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 274px;
+    height: auto;
+    background-color: white;
+    padding: 24px;
+    border-radius: 16px;
+    align-items: center;
+    text-align: center;
+}
+
+/*Sec2*/
+.sec2 {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 112px 56px;
+    max-width: 1328px;
+    margin: auto;
+    border-radius: 16px;
+    gap: 24px;
+
+    &_tarjetas {
+        @include grid()
+    }
+}
+
+.pd1 {
+    grid-area: pd1;
+    background-color: rgba(255, 243, 229, 1);
+}
+
+.pd2 {
+    grid-area: pd2;
+}
+
+.pd3 {
+    grid-area: pd3;
+}
+
+.pd4 {
+    grid-area: pd4;
+    background-color: rgba(255, 243, 229, 1);
+}
+
+/*Sec3*/
+
+.sec3 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 56px;
+    justify-content: center;
+    align-items: center;
+    padding: 224px 56px 224px 56px;
+    max-width: 1328px;
+    margin: auto;
+
+    &_content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    &_icon {
+        @include grid()
+    }
 }
