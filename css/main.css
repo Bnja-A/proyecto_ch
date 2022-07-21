@@ -145,18 +145,22 @@ h5 {
   display: flex;
   flex-direction: column;
   gap: 56px;
-  justify-content: center;
-  padding: 112px 224px;
+  align-items: center;
+  padding: 112px;
   margin: auto;
   background-color: white; }
   .sec4_content {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    text-align: center; }
+    text-align: center;
+    max-width: 1328px; }
   .sec4_img {
-    display: grid;
-    grid-template-columns: auto auto auto auto; }
+    display: flex;
+    flex-flow: row wrap;
+    gap: 32px;
+    max-width: 1328px;
+    justify-content: center; }
     .sec4_img .foto {
       display: flex;
       flex-direction: column;
@@ -198,14 +202,49 @@ h5 {
     .footer_escribenos p {
       color: rgba(255, 255, 255, 0.858); }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1110px) {
   .hero {
     display: flex;
-    padding: 16px;
+    flex-direction: column-reverse;
+    padding: 32px 16px 32px 16px;
     margin: 80px 24px 0px 24px;
     max-width: auto; }
-  .sec4 {
+    .hero_content {
+      align-items: center;
+      text-align: center; }
+    .hero_img img {
+      width: 100%;
+      height: auto; }
+  .sec1 {
     padding: 112px 24px; }
-    .sec4_img {
-      display: grid;
-      grid-template-columns: auto; } }
+    .sec1_Ctarjeta {
+      flex-direction: column; }
+  .sec2 {
+    flex-direction: column;
+    padding: 112px 24px;
+    text-align: center;
+    margin: 0px 16px; }
+  .sec3 {
+    flex-direction: column-reverse;
+    padding: 224px 24px; }
+    .sec3_content {
+      align-items: center; }
+  .sec4 {
+    padding: 24px 112px; }
+  .footer {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 112px 24px; } }
+
+@media screen and (max-width: 600px) {
+  .hero_img img {
+    width: 112px;
+    height: auto; }
+  .sec2_tarjetas {
+    display: grid;
+    grid-template-areas: "pd1" "pd2" "pd3" "pd4";
+    gap: 24px; }
+  .sec3 {
+    padding: 112px 24px; }
+  .sec4 {
+    padding: 112px 24px; } }

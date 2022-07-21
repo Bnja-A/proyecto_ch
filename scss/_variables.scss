@@ -23,3 +23,11 @@ $font_default: 1rem;
                          "pd3 pd4";
     gap: 24px;
 }
+
+@mixin gridmobile () {
+    display: grid;
+    grid-template-areas: "pd1" "pd2"
+                         "pd3" "pd4";
+    gap: 24px;
+    
+}
