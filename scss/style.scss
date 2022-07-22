@@ -29,8 +29,8 @@ body {
     }
 }
 
-.active{
-    color: $tertiary_color !important;
+.active {
+    color: $tertiary_color  !important;
     font-weight: bold;
 }
 
@@ -231,9 +231,10 @@ h5 {
 }
 
 /*footer*/
-footer{
-    background-color:$tertiary_color;
+footer {
+    background-color: $tertiary_color;
 }
+
 .footer {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -352,19 +353,29 @@ footer{
     .sec3 {
         padding: 112px 24px;
     }
-    
+
     .sec4 {
-        padding: 112px 24px;}
+        padding: 112px 24px;
+    }
+    .sec5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+        padding: 112px 24px;
+
+    }
 }
 
-.formb{
+.formb {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -372,37 +383,39 @@ footer{
     background-color: white;
     width: 50%;
     min-width: 800px;
-    margin:auto;
+    margin: auto;
     border-radius: 24px;
-    &_content{
+
+    &_content {
         text-align: center;
     }
-    &_footer{
+
+    &_footer {
         padding-top: 24px;
     }
 }
 
-.inputform{
+.inputform {
     width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
 
-    .form{
+    .form {
         min-width: 600px;
         width: 90%;
         padding: 24px 32px;
     }
-    
+
 }
 
 @media screen and (max-width: 600px) {
 
-    .form{
+    .form {
         min-width: 0px;
         width: 100%;
         padding: 24px;
         padding-bottom: auto;
-        background: linear-gradient(0deg, rgba(232,242,252,1) 0%, rgba(232,242,252,1) 16%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(0deg, rgba(232, 242, 252, 1) 0%, rgba(232, 242, 252, 1) 16%, rgba(255, 255, 255, 1) 100%);
     }
 }
