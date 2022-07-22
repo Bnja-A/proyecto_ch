@@ -29,6 +29,11 @@ body {
     }
 }
 
+.active{
+    color: $tertiary_color !important;
+    font-weight: bold;
+}
+
 p {
     color: $font_d3;
     font-size: 1rem;
@@ -43,7 +48,6 @@ h1 {
 h2 {
     color: $font_d2;
     font-weight: bold;
-    margin: 0px;
 }
 
 h3 {
@@ -139,7 +143,6 @@ h5 {
 
 .pd1 {
     grid-area: pd1;
-    background-color: rgba(255, 243, 229, 1);
 }
 
 .pd2 {
@@ -152,7 +155,6 @@ h5 {
 
 .pd4 {
     grid-area: pd4;
-    background-color: rgba(255, 243, 229, 1);
 }
 
 /*Sec3*/
@@ -229,12 +231,16 @@ h5 {
 }
 
 /*footer*/
+footer{
+    background-color:$tertiary_color;
+}
 .footer {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 112px 224px;
+    padding: 112px 80px;
+    max-width: 1400px;
     gap: 56px;
-    background: #0A335C;
+    margin: auto;
 
     &_content {
         h3 {
@@ -359,9 +365,44 @@ h5 {
 }
 
 .form{
-    padding: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 80px;
     background-color: white;
-    max-width: 50%;
+    width: 50%;
+    min-width: 800px;
     margin:auto;
     border-radius: 24px;
+    &_content{
+        text-align: center;
+    }
+    &_footer{
+        padding-top: 24px;
+    }
+}
+
+.inputform{
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .form{
+        min-width: 600px;
+        width: 90%;
+        padding: 24px 32px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .form{
+        min-width: 0px;
+        width: 100%;
+        padding: 24px;
+        padding-bottom: auto;
+        background: linear-gradient(0deg, rgba(232,242,252,1) 0%, rgba(232,242,252,1) 16%, rgba(255,255,255,1) 100%);
+    }
 }
