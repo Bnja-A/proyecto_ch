@@ -1,7 +1,7 @@
 body {
   box-sizing: border-box;
   font-size: 1rem;
-  background-color: #E8F2FC; }
+  background: #E8F2FC; }
 
 .bg-topbar {
   background: rgba(232, 242, 252, 0.5);
@@ -254,11 +254,6 @@ footer {
   .sec4 {
     padding: 112px 24px; }
   .sec5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 24px;
     padding: 112px 24px; } }
 
 .formb {
