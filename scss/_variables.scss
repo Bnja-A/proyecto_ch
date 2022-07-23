@@ -4,6 +4,10 @@ $color: (
     tertiary: #0A335C,
 );
 
+$hover: (
+    primary: linear-gradient(270deg, #E64343 0%, #9A45C1 59.38%),
+);
+
 $bgcolor: (
     ligth: #E8F2FC,
 );
@@ -18,6 +22,39 @@ $fontcolor-white: (
     100: white,
     80: rgba(255, 255, 255, 0.858),
 );
+
+$fontsize:(
+    default:1rem,
+);
+
+@mixin button () {
+    background: map-get($color, primary);
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    color: map-get($fontcolor-white, 100);
+    border: 0px;
+
+    &:hover {
+        background: map-get($hover, primary );
+        box-shadow: 0px 2px 20px 0px rgba(5, 44, 82, 0.15);
+        transition: ease-in;
+    }
+}
+
+@mixin grid () {
+    display: grid;
+    grid-template-areas: "pd1 pd2"
+                         "pd3 pd4";
+    gap: 24px;
+}
+
+@mixin gridmobile () {
+    display: grid;
+    grid-template-areas: "pd1""pd2"
+                         "pd3""pd4";
+    gap: 24px;
+}
+
 
 
 $primary_color: linear-gradient(270deg, #E64343 0%, #9A45C1 100%);
@@ -35,18 +72,3 @@ $font_l1: white;
 $font_l2: rgba(255, 255, 255, 0.858);
 
 $font_default: 1rem;
-
-@mixin grid () {
-    display: grid;
-    grid-template-areas: "pd1 pd2"
-        "pd3 pd4";
-    gap: 24px;
-}
-
-@mixin gridmobile () {
-    display: grid;
-    grid-template-areas: "pd1""pd2"
-        "pd3""pd4";
-    gap: 24px;
-
-}
