@@ -27,7 +27,7 @@ body {
   font-weight: bold; }
 
 p {
-  color: rgba(0, 0, 0, 0.496);
+  color: rgba(0, 0, 0, 0.778);
   font-size: 1rem;
   margin: 0px; }
 
@@ -36,11 +36,11 @@ h1 {
   font-weight: bold; }
 
 h2 {
-  color: rgba(0, 0, 0, 0.778);
+  color: rgba(0, 0, 0, 0.924);
   font-weight: bold; }
 
 h3 {
-  color: rgba(0, 0, 0, 0.778);
+  color: rgba(0, 0, 0, 0.924);
   font-weight: bold;
   margin: 0px; }
 
