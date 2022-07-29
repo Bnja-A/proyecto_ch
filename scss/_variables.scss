@@ -54,3 +54,8 @@ $fontsize:(
                          "pd3""pd4";
     gap: 24px;
 }
+
+@mixin gridarea ($bgcolor2, $area){
+    grid-area: $area;
+    background-color: $bgcolor2;
+}

@@ -132,19 +132,35 @@ h5 {
 }
 
 .pd1 {
-    grid-area: pd1;
+    @include gridarea(rgb(253, 236, 202),pd1)
 }
 
 .pd2 {
-    grid-area: pd2;
+    @include gridarea(none,pd2)
 }
 
 .pd3 {
-    grid-area: pd3;
+    @include gridarea(none,pd3)
 }
 
 .pd4 {
-    grid-area: pd4;
+    @include gridarea(rgb(253, 236, 202),pd4)
+}
+
+.icon1 {
+    @include gridarea(none,pd1)
+}
+
+.icon2 {
+    @include gridarea(none,pd2)
+}
+
+.picon3  {
+    @include gridarea(none,pd3)
+}
+
+.icon4  {
+    @include gridarea(none,pd4)
 }
 
 /*Sec3*/

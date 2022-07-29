@@ -110,16 +110,36 @@ h5 {
     gap: 24px; }
 
 .pd1 {
-  grid-area: pd1; }
+  grid-area: pd1;
+  background-color: #fdecca; }
 
 .pd2 {
-  grid-area: pd2; }
+  grid-area: pd2;
+  background-color: none; }
 
 .pd3 {
-  grid-area: pd3; }
+  grid-area: pd3;
+  background-color: none; }
 
 .pd4 {
-  grid-area: pd4; }
+  grid-area: pd4;
+  background-color: #fdecca; }
+
+.icon1 {
+  grid-area: pd1;
+  background-color: none; }
+
+.icon2 {
+  grid-area: pd2;
+  background-color: none; }
+
+.picon3 {
+  grid-area: pd3;
+  background-color: none; }
+
+.icon4 {
+  grid-area: pd4;
+  background-color: none; }
 
 /*Sec3*/
 .sec3 {
